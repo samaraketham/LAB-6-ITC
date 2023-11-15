@@ -1,0 +1,178 @@
+body {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 3fr minmax(200px, 1fr);
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+header, footer {
+    grid-column: span 3;
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: 2 / span 1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 2 / span 1;
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.advertisement {
+    grid-column: 3;
+    grid-row: 2 / span 1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.advertisement a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.advertisement img {
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+footer {
+    background-color: #3498db;
+}
+
+/* Add these styles at the end of your existing styles.css */
+
+#problem-solver {
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.advertisement {
+    grid-column: 3;
+    grid-row: 2 / span 1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.advertisement a {
+    display: block;
+}
+
+.advertisement img {
+    width: 150px;
+    height: 150px;
+    border: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.advertisement img:hover {
+    transform: scale(1.1);
+}
+
+/* Add these styles at the end of your existing Lab6.css */
+
+.advertisement {
+    grid-column: 3;
+    grid-row: 2 / span 2; /* Updated to span 2 rows */
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Display children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.advertisement a {
+    margin-bottom: 20px; /* Add space between advertisements */
+}
+
+
+/* Apply styles to the footer for scrolling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+footer {
+    background-color: #2f2e2e;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Add additional styling based on your design preferences */
+#problem-solver {
+    min-height: 100vh; /* Ensure the content area takes at least the full height of the viewport */
+    padding-bottom: 100px; /* Set padding at the bottom to accommodate the footer */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  /* Style for the footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    overflow-y: scroll; /* Enable vertical scroll if content exceeds the viewport height */
+  }
